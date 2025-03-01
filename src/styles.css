@@ -1,0 +1,141 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    color: #ffcc00;
+    margin-top: 40px;
+   font-size: xx-large;
+  }
+  input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    background-color: #333;
+    color: #ffcc00;
+    padding: 10px;
+    border: 2px dashed #ffcc00;
+    cursor: pointer;
+  }
+ 
+  .movie-checkbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .movie-checkbox-list div {
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 8px 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(255, 204, 0, 0.3);
+  }
+  
+  .movie-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-card h3 {
+    color: #ffcc00;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e6b800;
+  }
+  
+  .fas.fa-trash-alt {
+    transition: color 0.3s;
+  }
+  
+  .fas.fa-trash-alt:hover {
+    color: #ff4d4d;
+  }
+  .no-poster {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  .movie-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .movie-card button:hover {
+    background-color: #f0f0f0;
+  }
+ 
+.header-animate {
+    font-size: 5rem;
+    transition: font-size 3s;
+  }
+
+select, input {
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  ul li{
+    list-style-type: none;
+    cursor: pointer;
+  }
