@@ -6,9 +6,9 @@ const MovieCard = ({ movie, removeMovie, onEdit, onMoveUp, onMoveDown, isFirst, 
 
   const handleEdit = () => {
     if (isEditing) {
-      onEdit(editedMovie); // Save changes
+      onEdit(editedMovie); 
     }
-    setIsEditing(!isEditing); // Toggle edit mode
+    setIsEditing(!isEditing); 
   };
 
   const handleChange = (e) => {
@@ -95,7 +95,7 @@ const MovieCard = ({ movie, removeMovie, onEdit, onMoveUp, onMoveDown, isFirst, 
         </>
       )}
 
-      {/* Edit Button - Full Width */}
+      
       <div style={{ margin: "10px 20px" }}>
         <button 
           onClick={handleEdit} 
@@ -105,21 +105,21 @@ const MovieCard = ({ movie, removeMovie, onEdit, onMoveUp, onMoveDown, isFirst, 
         </button>
       </div>
 
-      {/* Last Row: Left Arrow, Trash, Right Arrow */}
+      
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", margin: "0 20px" }}>
-        {/* Left Arrow */}
+       
         {!isFirst && (
           <button onClick={onMoveUp} style={{ background: "none", border: "none", cursor: "pointer" }}>
             <i className="fas fa-arrow-left" style={{ fontSize: "24px", color: "grey" }}></i>
           </button>
         )}
 
-        {/* Trash Icon */}
+        
         <button onClick={() => removeMovie(movie.title)} style={{ background: "none", border: "none", cursor: "pointer" }}>
           <i className="fas fa-trash-alt" style={{ fontSize: "24px", color: "grey" }}></i>
         </button>
 
-        {/* Right Arrow */}
+       
         {!isLast && (
           <button onClick={onMoveDown} style={{ background: "none", border: "none", cursor: "pointer" }}>
             <i className="fas fa-arrow-right" style={{ fontSize: "24px", color: "grey" }}></i>
