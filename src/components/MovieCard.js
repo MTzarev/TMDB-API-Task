@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 
 const MovieCard = ({ movie, removeMovie, onEdit, onMoveUp, onMoveDown, isFirst, isLast }) => {
