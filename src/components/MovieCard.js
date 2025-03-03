@@ -21,7 +21,7 @@ const MovieCard = ({ movie, removeMovie, onEdit, onMoveUp, onMoveDown, isFirst, 
 
   return (
     <div className="movie-card">
-      <h3><bold>{movie.title}</bold></h3>
+      <h3><b>{movie.title}</b></h3>
       {isEditing ? (
         <>
           <p>
